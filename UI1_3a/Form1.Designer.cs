@@ -1,6 +1,6 @@
 ﻿namespace UI1_3a
 {
-    partial class Form1
+    partial class frmDetails
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(200, 200);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(262, 162);
+            this.btnReset.TabIndex = 0;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // frmDetails
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(706, 511);
+            this.Controls.Add(this.btnReset);
+            this.Name = "frmDetails";
+            this.Text = "My First Form Application";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnReset;
     }
 }
 
