@@ -12,19 +12,28 @@ namespace UI1_3a
 {
     public partial class frmDetails : Form
     {
-            this ClientSize = new System.Drawing.Size(300, 400);
-            this btnReset.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
-            this btnReset.Location= new System.Drawing.Point(200,200);
-            this btnReset.Text = "Reset";
+
         public frmDetails()
         {
-            InitializeComponent();
         
+            InitializeComponent();
+
+
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            this.ClientSize = new System.Drawing.Size(400, 300);
+            this.btnReset.Text = "Reset";
+            this.btnReset.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnReset.Location = new System.Drawing.Point(200, 200);
 
+
+        }
+
+        private void frmDetails_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MessageBox.Show("Bye Bye");
         }
     }
 }
